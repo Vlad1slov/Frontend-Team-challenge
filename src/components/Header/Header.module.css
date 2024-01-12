@@ -1,0 +1,273 @@
+.header-desktop,
+.header-desktop * {
+    box-sizing: border-box;
+}
+.header-desktop {
+    background: #ffffff;
+    padding: 16px 0px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+.header-row-1 {
+    background: var(--neutrals-8, #fcfcfd);
+    border-style: solid;
+    border-color: var(--primary-softdenim, #b9c5ca);
+    border-width: 0px 0px 0.7px 0px;
+    padding: 8px 80px 8px 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 1440px;
+    position: relative;
+    overflow: hidden;
+}
+.logo-header-desktop {
+    flex-shrink: 0;
+    width: 152px;
+    height: 66px;
+    position: relative;
+    overflow: visible;
+}
+.account-cart-and-button {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.account-and-cart {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.account {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.icons {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+}
+.account2 {
+    color: var(--text-river-styx, #0c1012);
+    text-align: left;
+    font-family: var(
+        --titlesmall-font-family,
+        "HvDTrialBrandonText-Medium",
+        sans-serif
+    );
+    font-size: var(--titlesmall-font-size, 16px);
+    line-height: var(--titlesmall-line-height, 22px);
+    font-weight: var(--titlesmall-font-weight, 500);
+    position: relative;
+}
+.cart {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.icons2 {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+}
+.cart2 {
+    color: var(--text-river-styx, #0c1012);
+    text-align: left;
+    font-family: var(
+        --titlesmall-font-family,
+        "HvDTrialBrandonText-Medium",
+        sans-serif
+    );
+    font-size: var(--titlesmall-font-size, 16px);
+    line-height: var(--titlesmall-line-height, 22px);
+    font-weight: var(--titlesmall-font-weight, 500);
+    position: relative;
+}
+.button {
+    border-radius: 4px;
+    padding: 16px 48px 16px 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.label {
+    color: var(--accent-midsummer, #336666);
+    text-align: center;
+    font-family: var(
+        --buttons-font-family,
+        "HvDTrialBrandonText-Bold",
+        sans-serif
+    );
+    font-size: var(--buttons-font-size, 16px);
+    line-height: var(--buttons-line-height, 18px);
+    font-weight: var(--buttons-font-weight, 700);
+    position: relative;
+}
+.header-row-2 {
+    border-style: solid;
+    border-color: var(--primary-softdenim, #b9c5ca);
+    border-width: 0px 0px 0.7px 0px;
+    padding: 0px 80px 0px 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 1440px;
+    position: relative;
+}
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.all-goods {
+    color: var(--text-river-styx, #0c1012);
+    text-align: left;
+    font-family: var(
+        --titlesmall-font-family,
+        "HvDTrialBrandonText-Medium",
+        sans-serif
+    );
+    font-size: var(--titlesmall-font-size, 16px);
+    line-height: var(--titlesmall-line-height, 22px);
+    font-weight: var(--titlesmall-font-weight, 500);
+    position: relative;
+    cursor: pointer;
+}
+
+.living {
+    color: var(--text-river-styx, #0c1012);
+    text-align: left;
+    font-family: var(
+        --titlesmall-font-family,
+        "HvDTrialBrandonText-Medium",
+        sans-serif
+    );
+    font-size: var(--titlesmall-font-size, 16px);
+    line-height: var(--titlesmall-line-height, 22px);
+    font-weight: var(--titlesmall-font-weight, 500);
+    position: relative;
+    cursor: pointer;
+}
+.dining {
+    color: var(--text-river-styx, #0c1012);
+    text-align: left;
+    font-family: var(
+        --titlesmall-font-family,
+        "HvDTrialBrandonText-Medium",
+        sans-serif
+    );
+    font-size: var(--titlesmall-font-size, 16px);
+    line-height: var(--titlesmall-line-height, 22px);
+    font-weight: var(--titlesmall-font-weight, 500);
+    position: relative;
+    cursor: pointer;
+}
+.bedroom {
+    color: var(--text-river-styx, #0c1012);
+    text-align: left;
+    font-family: var(
+        --titlesmall-font-family,
+        "HvDTrialBrandonText-Medium",
+        sans-serif
+    );
+    font-size: var(--titlesmall-font-size, 16px);
+    line-height: var(--titlesmall-line-height, 22px);
+    font-weight: var(--titlesmall-font-weight, 500);
+    position: relative;
+    cursor: pointer;
+}
+.accessories {
+    color: var(--text-river-styx, #0c1012);
+    text-align: left;
+    font-family: var(
+        --titlesmall-font-family,
+        "HvDTrialBrandonText-Medium",
+        sans-serif
+    );
+    font-size: var(--titlesmall-font-size, 16px);
+    line-height: var(--titlesmall-line-height, 22px);
+    font-weight: var(--titlesmall-font-weight, 500);
+    position: relative;
+    cursor: pointer;
+}
+.sale {
+    color: var(--text-river-styx, #0c1012);
+    text-align: left;
+    font-family: var(
+        --titlesmall-font-family,
+        "HvDTrialBrandonText-Medium",
+        sans-serif
+    );
+    font-size: var(--titlesmall-font-size, 16px);
+    line-height: var(--titlesmall-line-height, 22px);
+    font-weight: var(--titlesmall-font-weight, 500);
+    position: relative;
+    cursor: pointer;
+}
+.search {
+    border-style: solid;
+    border-color: var(--primary-softdenim, #b9c5ca);
+    border-width: 0px 0px 0px 1px;
+    padding: 8px 180px 8px 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 420px;
+    height: 56px;
+    position: relative;
+}
+.icons3 {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+}
+.what-are-you-looking-for {
+    color: var(--greyforplaceholders, #727678);
+    text-align: left;
+    font-family: "ProximaNova-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}

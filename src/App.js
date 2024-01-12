@@ -1,10 +1,19 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+
+import MediaQuery from "react-responsive";
+
+import Header from "./components/Header/Header";
+import MobileHeader from "./components/MobileHeader/MobileHeader";
 
 function App() {
     return (
-        <div className="App">
-            <Navbar />
+        <div>
+            <MediaQuery minWidth={1280}>
+                <Header />
+            </MediaQuery>
+            <MediaQuery maxWidth={1279}>
+                <MobileHeader />
+            </MediaQuery>
         </div>
     );
 }
