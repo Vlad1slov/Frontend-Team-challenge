@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+}
+
+.info {
+  display: flex;
+}
+
+.servisList {
+  padding-left: 0;
+}
+
+button {
+  outline: none;
+  background-color: inherit;
+}
