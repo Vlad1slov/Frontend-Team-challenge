@@ -1,3 +1,64 @@
+.servicesAndHelpWrap {
+  padding: 32px 0px 32px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 300px;
+  height: 359px;
+  position: relative;
+}
+
+.servicesAndHelpBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 280px;
+  position: relative;
+}
+
+.title {
+  color: var(--neutrals-2, #23262f);
+  text-align: left;
+  font-family: var(--heading-4-font-family, "Adelle-SemiBold", sans-serif);
+  font-size: var(--heading-4-font-size, 24px);
+  line-height: var(--heading-4-line-height, 32px);
+  font-weight: var(--heading-4-font-weight, 600);
+  position: relative;
+}
+
 .servisList {
-  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.servisItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.servisBtn {
+  color: var(--text-river-styx, #0c1012);
+  text-align: left;
+  font-family: "HvDTrialBrandonText-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  position: relative;
 }

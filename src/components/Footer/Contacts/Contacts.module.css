@@ -1,0 +1,82 @@
+.contacts {
+  padding: 32px 0px 32px 0px;
+  flex-shrink: 0;
+  width: 300px;
+  height: 359px;
+  position: relative;
+}
+
+.contactsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 280px;
+  position: absolute;
+  left: 0px;
+  top: 32px;
+}
+
+.title {
+  color: var(--neutrals-2, #23262f);
+  text-align: left;
+  font-family: var(--heading-4-font-family, "Adelle-SemiBold", sans-serif);
+  font-size: var(--heading-4-font-size, 24px);
+  line-height: var(--heading-4-line-height, 32px);
+  font-weight: var(--heading-4-font-weight, 600);
+  position: relative;
+}
+
+.contactsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.contactItemBox {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.text {
+  color: var(--text-river-styx, #0c1012);
+  text-align: left;
+  font-family: var(
+    --bodymedium-font-family,
+    "HvDTrialBrandonText-Regular",
+    sans-serif
+  );
+  font-size: var(--bodymedium-font-size, 16px);
+  line-height: var(--bodymedium-line-height, 22px);
+  font-weight: var(--bodymedium-font-weight, 400);
+  position: relative;
+}

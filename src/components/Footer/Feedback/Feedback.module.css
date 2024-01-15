@@ -1,9 +1,186 @@
 .form {
+  background: var(--background-pastelmaumimist, #f3f6f7);
+  padding: 32px 80px 32px 40px;
   display: flex;
   flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 710px;
+  position: relative;
+}
+
+.formWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.title {
+  color: var(--neutrals-2, #23262f);
+  text-align: left;
+  font-family: var(--heading-4-font-family, "Adelle-SemiBold", sans-serif);
+  font-size: var(--heading-4-font-size, 24px);
+  line-height: var(--heading-4-line-height, 32px);
+  font-weight: var(--heading-4-font-weight, 600);
+  position: relative;
+}
+
+.textFields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.labelWrap {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 220px;
+  height: 84px;
+  position: relative;
 }
 
 .label {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.labelText {
+  color: #000000;
+  text-align: left;
+  font-family: var(
+    --titlesmall-font-family,
+    "HvDTrialBrandonText-Medium",
+    sans-serif
+  );
+  font-size: var(--titlesmall-font-size, 16px);
+  line-height: var(--titlesmall-line-height, 22px);
+  font-weight: var(--titlesmall-font-weight, 500);
+  position: relative;
+}
+
+.fieldWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.line {
+  border-style: solid;
+  border-color: var(--primary-softdenim, #b9c5ca);
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 200px;
+  height: 0px;
+  position: relative;
+}
+
+.field {
+  color: var(--greyforplaceholders, #727678);
+  text-align: left;
+  font-family: var(
+    --bodymedium-font-family,
+    "HvDTrialBrandonText-Regular",
+    sans-serif
+  );
+  font-size: var(--bodymedium-font-size, 16px);
+  line-height: var(--bodymedium-line-height, 22px);
+  font-weight: var(--bodymedium-font-weight, 400);
+  position: relative;
+}
+
+.phoneLabelWrap {
+  width: 234px;
+}
+
+._38 {
+  color: var(--text-river-styx, #0c1012);
+  text-align: left;
+  font-family: var(
+    --bodymedium-font-family,
+    "HvDTrialBrandonText-Regular",
+    sans-serif
+  );
+  font-size: var(--bodymedium-font-size, 16px);
+  line-height: var(--bodymedium-line-height, 22px);
+  font-weight: var(--bodymedium-font-weight, 400);
+  position: relative;
+}
+
+.numberWrap {
+  flex-direction: row;
+}
+
+.phoneEmailWrap {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.labelMessage {
+  align-self: stretch;
+}
+
+.lineMessage {
+  border-style: solid;
+  border-color: var(--primary-softdenim, #b9c5ca);
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+
+.button {
+  background: #3b525b;
+  border-radius: 4px;
+  padding: 16px 48px 16px 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.btnText {
+  color: var(--neutrals-8, #fcfcfd);
+  text-align: center;
+  font-family: var(
+    --buttons-font-family,
+    "HvDTrialBrandonText-Bold",
+    sans-serif
+  );
+  font-size: var(--buttons-font-size, 16px);
+  line-height: var(--buttons-line-height, 18px);
+  font-weight: var(--buttons-font-weight, 700);
+  position: relative;
 }

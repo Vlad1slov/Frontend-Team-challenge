@@ -6,12 +6,16 @@ import { Services } from "./Services/Services";
 export const Footer = () => {
   return (
     <section className={s.footer}>
-      <div>
-        <div className={s.info}>
+      <div className={s.info}>
+        <div className={s.servCont}>
           <Services />
           <Contacts />
         </div>
-        <p>Copyright © 2024 Homewell. All rights reserved</p>
+        <div className={s.bottomBar}>
+          <p className={s.copyright}>
+            Copyright © 2024 Homewell. All rights reserved
+          </p>
+        </div>
       </div>
       <Feedback />
     </section>
