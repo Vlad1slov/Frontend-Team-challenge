@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import destopLogo from "../../images/desktop.png";
 import mobileLogo from "../../images/mobile.png";
 
-const Header = ({ className, ...props }) => {
+const Header = () => {
     return (
-        <div className={styles["header-desktop"] + " " + className}>
+        <div className={styles["header-desktop"]}>
             <div className={styles["header-row-1"]}>
                 <Link to="*">
                     <img
