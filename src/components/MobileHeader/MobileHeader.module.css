@@ -1,8 +1,8 @@
-.header-mobile,
-.header-mobile * {
+.header-desktop,
+.header-desktop * {
     box-sizing: border-box;
 }
-.header-mobile {
+.header-desktop {
     background: #ffffff;
     padding: 0px 20px 12px 20px;
     display: flex;
@@ -13,7 +13,7 @@
     width: 412px;
     position: relative;
 }
-.frame-26080104 {
+.header-row-1 {
     background: #ffffff;
     border-style: solid;
     border-color: var(--primary-pasteltahoesnow, #d8e2e6);
@@ -33,6 +33,7 @@
     position: relative;
     overflow: visible;
 }
+/* delete .account-cart-and-button  */
 .account-and-cart {
     display: flex;
     flex-direction: row;
@@ -42,6 +43,7 @@
     flex-shrink: 0;
     position: relative;
 }
+/* Add */
 .frame-26080103 {
     display: flex;
     flex-direction: row;
@@ -53,6 +55,8 @@
     height: 48px;
     position: relative;
 }
+/* delete account */
+
 .icons {
     flex-shrink: 0;
     width: 24px;
@@ -60,6 +64,7 @@
     position: relative;
     overflow: visible;
 }
+/* Add */
 .frame-26080100 {
     display: flex;
     flex-direction: row;
@@ -71,6 +76,11 @@
     height: 48px;
     position: relative;
 }
+
+/* delete account2 */
+
+/* delete cart */
+
 .icons2 {
     flex-shrink: 0;
     width: 24px;
@@ -78,6 +88,10 @@
     position: relative;
     overflow: visible;
 }
+
+/* delete cart2 */
+
+/* Add */
 .frame-26080101 {
     display: flex;
     flex-direction: row;
@@ -89,6 +103,10 @@
     height: 48px;
     position: relative;
 }
+
+/* delete button */
+
+/* Add */
 .icons3 {
     flex-shrink: 0;
     width: 24px;
@@ -96,6 +114,8 @@
     position: relative;
     overflow: visible;
 }
+
+/* Add */
 .frame-26080102 {
     display: flex;
     flex-direction: row;
@@ -107,6 +127,10 @@
     width: 372px;
     position: relative;
 }
+
+/* delete label, header-row-2, menu-items*/
+
+/* add */
 .input-chip {
     border-radius: 8px;
     border-style: solid;
@@ -121,6 +145,7 @@
     position: relative;
     overflow: hidden;
 }
+/* add */
 .state-layer {
     padding: 8px 16px 8px 16px;
     display: flex;
@@ -131,6 +156,8 @@
     flex-shrink: 0;
     position: relative;
 }
+
+/* add */
 .label-text {
     color: var(--text-river-styx, #0c1012);
     text-align: center;
