@@ -1,3 +1,4 @@
+import MyInput from "components/UI/input/MyInput";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
 
@@ -91,25 +92,26 @@ const Header = ({ className, ...props }) => {
             </div>
             <div className={styles["header-row-2"]}>
                 <div className={styles["menu-items"]}>
-                    <div className={styles["all-goods"]}>
-                        <Link to="/allgoods">All goods</Link>
-                    </div>
-                    <div className={styles["living"]}>
-                        <Link to="/living">Living</Link>{" "}
-                    </div>
-                    <div className={styles["dining"]}>
-                        <Link to="/dining">Dining</Link>{" "}
-                    </div>
-                    <div className={styles["bedroom"]}>
-                        <Link to="/bedroom">Bedroom</Link>{" "}
-                    </div>
-                    <div className={styles["accessories"]}>
-                        <Link to="/accessories">Accessories</Link>{" "}
-                    </div>
-                    <div className={styles["sale"]}>
-                        <Link to="/sale">Sale</Link>{" "}
-                    </div>
+                    <Link to="/allgoods" className={styles["all-goods"]}>
+                        All goods
+                    </Link>
+                    <Link to="/living" className={styles["living"]}>
+                        Living
+                    </Link>{" "}
+                    <Link to="/dining" className={styles["dining"]}>
+                        Dining
+                    </Link>{" "}
+                    <Link to="/bedroom" className={styles["bedroom"]}>
+                        Bedroom
+                    </Link>{" "}
+                    <Link to="/accessories" className={styles["accessories"]}>
+                        Accessories
+                    </Link>{" "}
+                    <Link to="/sale" className={styles["sale"]}>
+                        Sale
+                    </Link>{" "}
                 </div>
+
                 <div className={styles["search"]}>
                     <svg
                         className={styles["icons3"]}
@@ -125,9 +127,7 @@ const Header = ({ className, ...props }) => {
                         />
                     </svg>
 
-                    <div className={styles["what-are-you-looking-for"]}>
-                        What are you looking for?{" "}
-                    </div>
+                    <MyInput />
                 </div>
             </div>
         </div>

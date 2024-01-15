@@ -156,63 +156,11 @@
     flex-shrink: 0;
     position: relative;
 }
-.all-goods {
-    color: var(--text-river-styx, #0c1012);
-    text-align: left;
-    font-family: var(
-        --titlesmall-font-family,
-        "HvDTrialBrandonText-Medium",
-        sans-serif
-    );
-    font-size: var(--titlesmall-font-size, 16px);
-    line-height: var(--titlesmall-line-height, 22px);
-    font-weight: var(--titlesmall-font-weight, 500);
-    position: relative;
-    cursor: pointer;
-}
-
-.living {
-    color: var(--text-river-styx, #0c1012);
-    text-align: left;
-    font-family: var(
-        --titlesmall-font-family,
-        "HvDTrialBrandonText-Medium",
-        sans-serif
-    );
-    font-size: var(--titlesmall-font-size, 16px);
-    line-height: var(--titlesmall-line-height, 22px);
-    font-weight: var(--titlesmall-font-weight, 500);
-    position: relative;
-    cursor: pointer;
-}
-.dining {
-    color: var(--text-river-styx, #0c1012);
-    text-align: left;
-    font-family: var(
-        --titlesmall-font-family,
-        "HvDTrialBrandonText-Medium",
-        sans-serif
-    );
-    font-size: var(--titlesmall-font-size, 16px);
-    line-height: var(--titlesmall-line-height, 22px);
-    font-weight: var(--titlesmall-font-weight, 500);
-    position: relative;
-    cursor: pointer;
-}
-.bedroom {
-    color: var(--text-river-styx, #0c1012);
-    text-align: left;
-    font-family: var(
-        --titlesmall-font-family,
-        "HvDTrialBrandonText-Medium",
-        sans-serif
-    );
-    font-size: var(--titlesmall-font-size, 16px);
-    line-height: var(--titlesmall-line-height, 22px);
-    font-weight: var(--titlesmall-font-weight, 500);
-    position: relative;
-    cursor: pointer;
-}
+.all-goods,
+.living,
+.dining,
+.bedroom,
+.sale,
 .accessories {
     color: var(--text-river-styx, #0c1012);
     text-align: left;
@@ -226,36 +174,18 @@
     font-weight: var(--titlesmall-font-weight, 500);
     position: relative;
     cursor: pointer;
-}
-.sale {
-    color: var(--text-river-styx, #0c1012);
-    text-align: left;
-    font-family: var(
-        --titlesmall-font-family,
-        "HvDTrialBrandonText-Medium",
-        sans-serif
-    );
-    font-size: var(--titlesmall-font-size, 16px);
-    line-height: var(--titlesmall-line-height, 22px);
-    font-weight: var(--titlesmall-font-weight, 500);
-    position: relative;
-    cursor: pointer;
+    text-decoration: none;
 }
 .search {
-    border-style: solid;
-    border-color: var(--primary-softdenim, #b9c5ca);
-    border-width: 0px 0px 0px 1px;
-    padding: 8px 180px 8px 12px;
     display: flex;
-    flex-direction: row;
-    gap: 7px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    width: 420px;
+    width: 501px;
     height: 56px;
-    position: relative;
+    padding: 8px 180px 8px 12px;
+    align-items: center;
+    gap: 7px;
+    flex-shrink: 0;
 }
+
 .icons3 {
     flex-shrink: 0;
     width: 24px;
@@ -263,7 +193,7 @@
     position: relative;
     overflow: visible;
 }
-.what-are-you-looking-for {
+::placeholder {
     color: var(--greyforplaceholders, #727678);
     text-align: left;
     font-family: "ProximaNova-Regular", sans-serif;

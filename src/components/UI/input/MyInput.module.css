@@ -1,0 +1,17 @@
+.input {
+    display: flex;
+    width: 501px;
+    height: 56px;
+    padding: 8px 180px 8px 12px;
+    align-items: center;
+    gap: 7px;
+    flex-shrink: 0;
+    color: var(--greyforplaceholders, #727875);
+    text-align: left;
+    font-family: "ProximaNova-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline;
+    outline: none;
+    border: none;
+}
