@@ -83,7 +83,6 @@ const Header = () => {
                         Sale
                     </Link>{" "}
                 </div>
-
                 <div className={styles["search"]}>
                     <svg
                         className={styles["icons3"]}
@@ -98,7 +97,6 @@ const Header = () => {
                             fill="#3B525B"
                         />
                     </svg>
-
                     <MyInput />
                 </div>
             </div>
