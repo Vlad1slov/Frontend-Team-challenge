@@ -1,16 +1,80 @@
 .footer {
+  box-sizing: border-box;
+  background: #ffffff;
+  border-style: solid;
+  border-color: var(--background-pastelcallalilly, #e8eef0);
+  border-width: 1px 0px 0px 0px;
+  padding: 0px 80px 0px 80px;
   display: flex;
+  flex-direction: row;
+  gap: 42px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1440px;
+  position: relative;
 }
 
 .info {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 609px;
+  height: 446px;
+  position: relative;
 }
 
-.servisList {
-  padding-left: 0;
+.servCont {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 569px;
+  position: relative;
+}
+
+.servicesAndHelp {
+  padding: 32px 0px 32px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 300px;
+  height: 359px;
+  position: relative;
 }
 
 button {
   outline: none;
   background-color: inherit;
+}
+
+.bottomBar {
+  padding: 0px 0px 24px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.copyright {
+  color: var(--neutrals-4, #777e90);
+  text-align: left;
+  font-family: var(
+    --bodysmall-font-family,
+    "HvDTrialBrandonText-Regular",
+    sans-serif
+  );
+  font-size: var(--bodysmall-font-size, 14px);
+  line-height: var(--bodysmall-line-height, 20px);
+  font-weight: var(--bodysmall-font-weight, 400);
+  position: relative;
+  align-self: stretch;
 }
