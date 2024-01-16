@@ -22,6 +22,15 @@
 
 @font-face {
   font-display: swap;
+  font-family: "HvDTrialBrandonText-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/HvDTrial_Brandon_Text_Bold-BF6514e9eb720dc.otf");
+  src: url("fonts/HvDTrial_Brandon_Text_Bold-BF6514e9eb720dc.otf") format("otf");
+}
+
+@font-face {
+  font-display: swap;
   font-family: "Adelle-SemiBold";
   font-style: normal;
   font-weight: 600;
