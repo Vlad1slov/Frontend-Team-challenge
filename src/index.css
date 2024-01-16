@@ -1,3 +1,34 @@
+@import-normalize;
+
+@font-face {
+  font-display: swap;
+  font-family: "HvDTrialBrandonText-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/HvDTrial_Brandon_Text_Medium-BF6514e9eb272a3.otf");
+  src: url("fonts/HvDTrial_Brandon_Text_Medium-BF6514e9eb272a3.otf")
+    format("otf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "HvDTrialBrandonText-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/HvDTrial_Brandon_Text_Regular-BF6514e9eb617a0.otf");
+  src: url("fonts/HvDTrial_Brandon_Text_Regular-BF6514e9eb617a0.otf")
+    format("otf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Adelle-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/Adelle_Semibold.otf");
+  src: url("fonts/Adelle_Semibold.otf") format("otf");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -39,4 +70,10 @@ h5,
   background: none;
 
   -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

@@ -99,7 +99,7 @@
 }
 
 .field {
-  color: var(--greyforplaceholders, #727678);
+  color: var(--greyforplaceholders, #1b1b1b);
   text-align: left;
   font-family: var(
     --bodymedium-font-family,
