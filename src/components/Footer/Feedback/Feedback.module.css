@@ -112,6 +112,20 @@
   position: relative;
 }
 
+.field::placeholder {
+  color: var(--greyforplaceholders, #727678);
+  text-align: left;
+  font-family: var(
+    --bodymedium-font-family,
+    "HvDTrialBrandonText-Regular",
+    sans-serif
+  );
+  font-size: var(--bodymedium-font-size, 16px);
+  line-height: var(--bodymedium-line-height, 22px);
+  font-weight: var(--bodymedium-font-weight, 400);
+  position: relative;
+}
+
 .phoneLabelWrap {
   width: 234px;
 }
