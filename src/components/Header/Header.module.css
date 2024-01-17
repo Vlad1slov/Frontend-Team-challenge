@@ -21,7 +21,7 @@
     border-style: solid;
     border-color: var(--primary-softdenim, #b9c5ca);
     border-width: 0px 0px 0.7px 0px;
-    padding: 8px 80px 8px 80px;
+    padding: 8px 45px 8px 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,6 +71,7 @@
     height: 24px;
     position: relative;
     overflow: visible;
+    margin-right: 11px;
 }
 .account2 {
     color: var(--Text-River-Styx, #0c1012);
@@ -84,7 +85,20 @@
     line-height: var(--titlesmall-line-height, 22px);
     font-weight: var(--titlesmall-font-weight, 500);
     position: relative;
+    height: 56px;
+    width: 126px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
+
+.account2:hover,
+.cart2:hover,
+.label:hover {
+    background-color: rgb(216, 238, 230);
+}
+
 .cart {
     display: flex;
     flex-direction: row;
@@ -100,10 +114,14 @@
     height: 24px;
     position: relative;
     overflow: visible;
+    margin-right: 11px;
 }
 .cart2 {
     color: var(--text-river-styx, #0c1012);
-    text-align: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: var(
         --titlesmall-font-family,
         "HvDTrialBrandonText-Medium",
@@ -112,18 +130,20 @@
     font-size: var(--titlesmall-font-size, 16px);
     line-height: var(--titlesmall-line-height, 22px);
     font-weight: var(--titlesmall-font-weight, 500);
+
     position: relative;
+    width: 99px;
+    height: 56px;
+    cursor: pointer;
 }
 .button {
-    border-radius: 4px;
-    padding: 16px 48px 16px 48px;
     display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    position: relative;
+    align-items: center;
+    gap: 12px;
+    width: 190px;
+    height: 50px;
+    cursor: pointer;
 }
 .label {
     color: var(--accent-midsummer, #336666);
@@ -137,6 +157,11 @@
     line-height: var(--buttons-line-height, 18px);
     font-weight: var(--buttons-font-weight, 700);
     position: relative;
+    width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header-row-2 {
     border-style: solid;
