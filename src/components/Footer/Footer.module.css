@@ -4,6 +4,7 @@
   border-style: solid;
   border-color: var(--background-pastelcallalilly, #e8eef0);
   border-width: 1px 0px 0px 0px;
+  margin: 0 auto;
   padding: 0px 80px 0px 80px;
   display: flex;
   flex-direction: row;

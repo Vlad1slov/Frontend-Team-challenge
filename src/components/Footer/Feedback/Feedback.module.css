@@ -22,7 +22,7 @@
 }
 
 .title {
-  color: var(--neutrals-2, #23262f);
+  color: var(--text-river-styx, #0c1012);
   text-align: left;
   font-family: var(--heading-4-font-family, "Adelle-SemiBold", sans-serif);
   font-size: var(--heading-4-font-size, 24px);
@@ -65,7 +65,7 @@
 }
 
 .labelText {
-  color: #000000;
+  color: var(--text-river-styx, #0c1012);
   text-align: left;
   font-family: var(
     --titlesmall-font-family,
@@ -99,7 +99,7 @@
 }
 
 .field {
-  color: var(--greyforplaceholders, #1b1b1b);
+  color: var(--text-river-styx, #0c1012);
   text-align: left;
   font-family: var(
     --bodymedium-font-family,

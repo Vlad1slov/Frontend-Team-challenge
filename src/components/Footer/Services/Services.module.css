@@ -23,7 +23,7 @@
 }
 
 .title {
-  color: var(--neutrals-2, #23262f);
+  color: var(--text-river-styx, #0c1012);
   text-align: left;
   font-family: var(--heading-4-font-family, "Adelle-SemiBold", sans-serif);
   font-size: var(--heading-4-font-size, 24px);
