@@ -1,29 +1,43 @@
 .servicesAndHelpWrap {
   padding: 32px 0px 32px 0px;
+  gap: 80px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 300px;
-  height: 359px;
   position: relative;
+
+  @media screen and (min-width: 1280px) {
+    width: 260px;
+    height: 359px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    border-style: solid;
+    border-color: var(--primary-pasteltahoesnow, #d8e2e6);
+    border-width: 1px 0px 0px 0px;
+    padding: 24px 0px 24px 0px;
+  }
 }
 
 .servicesAndHelpBox {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   align-items: flex-start;
   justify-content: flex-start;
+  align-self: stretch;
   flex-shrink: 0;
-  width: 280px;
   position: relative;
+
+  @media screen and (min-width: 1280px) {
+    gap: 24px;
+  }
 }
 
 .title {
-  color: var(--neutrals-2, #23262f);
+  color: var(--text-river-styx, #0c1012);
   text-align: left;
   font-family: var(--heading-4-font-family, "Adelle-SemiBold", sans-serif);
   font-size: var(--heading-4-font-size, 24px);
@@ -41,6 +55,10 @@
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+
+  @media screen and (max-width: 1279px) {
+    gap: 8px;
+  }
 }
 
 .servisItem {
@@ -61,4 +79,8 @@
   line-height: 22px;
   font-weight: 400;
   position: relative;
+
+  @media screen and (max-width: 1279px) {
+    width: 167px;
+  }
 }
