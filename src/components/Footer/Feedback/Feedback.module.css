@@ -99,6 +99,7 @@
 }
 
 .field {
+  width: 100%;
   color: var(--text-river-styx, #0c1012);
   text-align: left;
   font-family: var(
