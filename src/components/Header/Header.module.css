@@ -75,15 +75,12 @@
 }
 .account2 {
     color: var(--Text-River-Styx, #0c1012);
-    text-align: left;
-    font-family: var(
-        --titlesmall-font-family,
-        "HvDTrialBrandonText-Medium",
-        sans-serif
-    );
-    font-size: var(--titlesmall-font-size, 16px);
-    line-height: var(--titlesmall-line-height, 22px);
-    font-weight: var(--titlesmall-font-weight, 500);
+    /* Buttons */
+    font-family: HvDTrial Brandon Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 112.5% */
     position: relative;
     height: 56px;
     width: 126px;
@@ -96,7 +93,8 @@
 .account2:hover,
 .cart2:hover,
 .label:hover {
-    background-color: rgb(216, 238, 230);
+    background-color: rgb(218, 234, 227);
+    border-radius: 10px;
 }
 
 .cart {
@@ -117,23 +115,18 @@
     margin-right: 11px;
 }
 .cart2 {
-    color: var(--text-river-styx, #0c1012);
-    text-align: center;
+    color: var(--Text-River-Styx, #0c1012);
+    font-family: HvDTrial Brandon Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    position: relative;
+    height: 56px;
+    width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(
-        --titlesmall-font-family,
-        "HvDTrialBrandonText-Medium",
-        sans-serif
-    );
-    font-size: var(--titlesmall-font-size, 16px);
-    line-height: var(--titlesmall-line-height, 22px);
-    font-weight: var(--titlesmall-font-weight, 500);
-
-    position: relative;
-    width: 99px;
-    height: 56px;
     cursor: pointer;
 }
 .button {
@@ -269,12 +262,12 @@
     position: relative;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1280px) {
-    .header-desktop,
-    .header-desktop * {
+@media screen and (max-width: 1280px) {
+    .header-mobile,
+    .header-mobile * {
         box-sizing: border-box;
     }
-    .header-desktop {
+    .header-mobile {
         background: #ffffff;
         padding: 0px 20px 12px 20px;
         display: flex;
@@ -285,7 +278,7 @@
         width: 412px;
         position: relative;
     }
-    .header-row-1 {
+    .frame-26080104 {
         background: #ffffff;
         border-style: solid;
         border-color: var(--primary-pasteltahoesnow, #d8e2e6);
@@ -379,6 +372,13 @@
     /* delete button */
 
     /* Add */
+    .icons3 {
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        overflow: visible;
+    }
 
     /* Add */
     .frame-26080102 {
