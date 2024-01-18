@@ -18,20 +18,21 @@
     border-color: var(--primary-pasteltahoesnow, #d8e2e6);
     border-width: 1px 0px 0px 0px;
     padding: 24px 0px 24px 0px;
-    gap: 16px;
   }
 }
 
 .servicesAndHelpBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+
   @media screen and (min-width: 1280px) {
-    display: flex;
-    flex-direction: column;
     gap: 24px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
   }
 }
 
