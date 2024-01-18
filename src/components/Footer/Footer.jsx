@@ -6,6 +6,12 @@ import { Services } from "./Services/Services";
 export const Footer = () => {
   return (
     <section className={s.footer}>
+      <div className={s.mobGetInTouch}>
+        <p className={s.questions}>Any questions?</p>
+        <button className={s.btnGet}>
+          <span className={s.btnLabel}>Get in touch</span>
+        </button>
+      </div>
       <div className={s.info}>
         <div className={s.servCont}>
           <Services />
@@ -17,7 +23,9 @@ export const Footer = () => {
           </p>
         </div>
       </div>
-      <Feedback />
+      <div className={s.feedbackBox}>
+        <Feedback />
+      </div>
     </section>
   );
 };
