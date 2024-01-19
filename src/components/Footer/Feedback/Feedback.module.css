@@ -160,6 +160,11 @@
 }
 
 .labelMessage {
+  padding: 0px 10px 0px 10px;
+  align-self: stretch;
+}
+
+.fieldMessage {
   align-self: stretch;
 }
 
