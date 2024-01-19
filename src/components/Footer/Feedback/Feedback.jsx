@@ -119,7 +119,7 @@ export const Feedback = () => {
                 className={`${s.label} ${s.labelMessage}`}
               >
                 <div className={s.labelText}>Message</div>
-                <div className={`${s.fieldWrap} ${s.labelMessage}`}>
+                <div className={`${s.fieldWrap} ${s.fieldMessage}`}>
                   <Field
                     type="text"
                     name="message"
