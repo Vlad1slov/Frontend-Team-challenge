@@ -146,15 +146,17 @@
     overflow: hidden;
 }
 /* add */
-.state-layer {
-    padding: 8px 16px 8px 16px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
+@media screen and (max-width: 1279px) {
+    .state-layer {
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+    }
 }
 
 /* add */
