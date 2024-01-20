@@ -1,5 +1,45 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as yup from "yup";
 import s from "./Feedback.module.css";
+
+const {
+  validName: { checkName, messageName },
+  validNum: { checkNum, messageNum },
+  validEmail: { checkEmail, messageEmail },
+} = {
+  validName: {
+    checkName: /^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/,
+    messageName: "Name may contain only letters",
+  },
+  validNum: {
+    checkNum: /^\d{10}$/,
+    messageNum: "Phone number must be digits",
+  },
+  validEmail: {
+    checkEmail: /^[^@]+@[^@]+\..+$/,
+    messageEmail: "email must be a valid email",
+  },
+};
+
+const schema = yup.object().shape({
+  name: yup
+    .string()
+    .trim()
+    .matches(checkName, messageName)
+    .required("Name is required"),
+  number: yup
+    .string()
+    .min(10, "number must be 10 digits")
+    .max(10, "number must be 10 digits")
+    .matches(checkNum, messageNum)
+    .required("Number is required"),
+  email: yup
+    .string()
+    .email()
+    .matches(checkEmail, messageEmail)
+    .required("Email is required"),
+  message: yup.string().required(),
+});
 
 const initialValues = {
   name: "",
@@ -9,12 +49,16 @@ const initialValues = {
 };
 
 export const Feedback = () => {
+  const handleSubmit = (values, { resetForm }) => {
+    resetForm();
+  };
+
   return (
     <div>
       <Formik
         initialValues={initialValues}
-        // validationSchema={schema}
-        //   onSubmit={handleSubmit}
+        validationSchema={schema}
+        onSubmit={handleSubmit}
       >
         <Form className={s.form}>
           <div className={s.formWrap}>
@@ -75,7 +119,7 @@ export const Feedback = () => {
                 className={`${s.label} ${s.labelMessage}`}
               >
                 <div className={s.labelText}>Message</div>
-                <div className={`${s.fieldWrap} ${s.labelMessage}`}>
+                <div className={`${s.fieldWrap} ${s.fieldMessage}`}>
                   <Field
                     type="text"
                     name="message"
