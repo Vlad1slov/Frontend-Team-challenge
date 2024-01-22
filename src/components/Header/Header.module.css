@@ -51,7 +51,7 @@
         align-self: stretch;
         flex-shrink: 0;
         position: relative;
-        width: 372px;
+        width: 412px;
     }
 }
 .logo-header-desktop {
@@ -139,7 +139,7 @@
     font-family: HvDTrial Brandon Text;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 18px;
     position: relative;
     height: 56px;
@@ -255,7 +255,7 @@
 .header-row-2 {
     border-style: solid;
     border-color: var(--primary-softdenim, #b9c5ca);
-    border-width: 0px 0px 0.7px 0px;
+    border-width: 0px 0px 0px 0px;
     padding: 0px 20px 0px 80px;
     display: flex;
     flex-direction: row;
@@ -266,13 +266,15 @@
     position: relative;
     @media screen and (max-width: 1279px) {
         display: flex;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
         flex-direction: row;
         gap: 8px;
         align-items: center;
         justify-content: flex-start;
         flex-wrap: wrap;
         flex-shrink: 0;
-        width: 372px;
+        width: 412px;
         position: relative;
         display: flex;
     }
