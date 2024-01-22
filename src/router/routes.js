@@ -4,14 +4,16 @@ import Bedroom from "pages/Bedroom";
 import Dining from "pages/Dining";
 import Home from "pages/Home";
 import Living from "pages/Living";
+import NotFound from "pages/NotFound/NotFound";
 import Sale from "pages/Sale";
 
 export const routes = [
-    { path: "/accessories", element: <Accessories />, exact: true },
-    { path: "/allgoods", element: <AllGoods />, exact: true },
-    { path: "/bedroom", element: <Bedroom />, exact: true },
-    { path: "/dining", element: <Dining />, exact: true },
-    { path: "/living", element: <Living />, exact: true },
-    { path: "/sale", element: <Sale />, exact: true },
-    { path: "*", element: <Home />, exact: true },
+  { path: "/accessories", element: <Accessories />, exact: true },
+  { path: "/allgoods", element: <AllGoods />, exact: true },
+  { path: "/bedroom", element: <Bedroom />, exact: true },
+  { path: "/dining", element: <Dining />, exact: true },
+  { path: "/living", element: <Living />, exact: true },
+  { path: "/sale", element: <Sale />, exact: true },
+  { path: "/", element: <Home />, exact: true },
+  { path: "*", element: <NotFound />, exact: true },
 ];
