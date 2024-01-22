@@ -30,7 +30,7 @@
     border-style: solid;
     border-color: var(--primary-softdenim, #b9c5ca);
     border-width: 0px 0px 0.7px 0px;
-    padding: 8px 0px 8px 80px;
+    padding: 8px 70px 8px 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
