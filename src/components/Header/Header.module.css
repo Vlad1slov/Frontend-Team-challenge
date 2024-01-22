@@ -16,6 +16,7 @@
     flex-direction: column;
     align-items: flex-start;
     @media screen and (max-width: 1279px) {
+        /* При изменении масштабов экрана, не двигается одновременно с футером, просто слева на месте стоит не по центру  (Тут нерпавильные размеры Отступ между лого и иконками) */
         display: flex;
         width: 412px;
         padding: 0px 20px 12px 20px;
@@ -40,6 +41,7 @@
     position: relative;
     overflow: hidden;
     @media screen and (max-width: 1279px) {
+        /*  Тут нерпавильные размеры Отступ между лого и иконками */
         background: #ffffff;
         border-style: solid;
         border-color: var(--primary-pasteltahoesnow, #d8e2e6);
@@ -79,7 +81,6 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    align-items: center;
     justify-content: center;
     flex-shrink: 0;
     position: relative;
@@ -139,7 +140,7 @@
     font-family: HvDTrial Brandon Text;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 18px;
     position: relative;
     height: 56px;
@@ -252,6 +253,7 @@
         display: none;
     }
 }
+/* Тут панель категорий неправильно отображается, не могу поменять что бы они были слева и внутри них отступ должен быть до инпута в 412px. Это основной див нижнего хедера */
 .header-row-2 {
     border-style: solid;
     border-color: var(--primary-softdenim, #b9c5ca);
@@ -265,6 +267,7 @@
     width: 1440px;
     position: relative;
     @media screen and (max-width: 1279px) {
+        /* при мобильном тоже неправильно показывается менюшка, должно быть 4 чипсы сверху и две снизу, неправильне размеры */
         display: flex;
         margin-bottom: 10px;
         padding-bottom: 10px;
@@ -280,6 +283,7 @@
         display: flex;
     }
 }
+/* вот менюшка */
 .menu-items {
     display: flex;
     padding: 8px 0px 0px 0px;

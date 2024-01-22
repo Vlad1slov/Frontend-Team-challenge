@@ -46,7 +46,6 @@ const Header = () => {
                                 />
                             </svg>
                         </div>
-
                         <div className={styles["account2"]}>
                             <svg
                                 className={styles["icons"]}
