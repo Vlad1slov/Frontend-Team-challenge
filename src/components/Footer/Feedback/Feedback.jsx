@@ -9,11 +9,11 @@ const {
 } = {
   validName: {
     checkName: /^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/,
-    messageName: "Name may contain only letters",
+    messageName: "name may contain only letters",
   },
   validNum: {
     checkNum: /^\d{10}$/,
-    messageNum: "Phone number must be digits",
+    messageNum: "phone number must be digits",
   },
   validEmail: {
     checkEmail: /^[^@]+@[^@]+\..+$/,
@@ -26,18 +26,18 @@ const schema = yup.object().shape({
     .string()
     .trim()
     .matches(checkName, messageName)
-    .required("Name is required"),
+    .required("name is required"),
   number: yup
     .string()
     .min(10, "number must be 10 digits")
     .max(10, "number must be 10 digits")
     .matches(checkNum, messageNum)
-    .required("Number is required"),
+    .required("number is required"),
   email: yup
     .string()
     .email()
     .matches(checkEmail, messageEmail)
-    .required("Email is required"),
+    .required("email is required"),
   message: yup.string().required(),
 });
 
@@ -74,9 +74,15 @@ export const Feedback = () => {
                       className={s.field}
                       placeholder="Enter your name"
                     />
-                    <div className={s.line}></div>
+                    <div>
+                      <div className={s.line}></div>
+                      <ErrorMessage
+                        name="name"
+                        component="div"
+                        className={s.errorMessage}
+                      />
+                    </div>
                   </div>
-                  <ErrorMessage name="name" component="div" />
                 </label>
               </div>
               <div className={s.phoneEmailWrap}>
@@ -93,9 +99,15 @@ export const Feedback = () => {
                           placeholder="Enter your phone number"
                         />
                       </div>
-                      <div className={s.line}></div>
+                      <div>
+                        <div className={s.line}></div>
+                        <ErrorMessage
+                          name="number"
+                          component="div"
+                          className={s.errorMessage}
+                        />
+                      </div>
                     </div>
-                    <ErrorMessage name="number" component="div" />
                   </label>
                 </div>
                 <div className={s.labelWrap}>
@@ -108,9 +120,15 @@ export const Feedback = () => {
                         className={s.field}
                         placeholder="Enter your email"
                       />
-                      <div className={s.line}></div>
+                      <div>
+                        <div className={s.line}></div>
+                        <ErrorMessage
+                          name="email"
+                          component="div"
+                          className={s.errorMessage}
+                        />
+                      </div>
                     </div>
-                    <ErrorMessage name="email" component="div" />
                   </label>
                 </div>
               </div>
@@ -123,12 +141,18 @@ export const Feedback = () => {
                   <Field
                     type="text"
                     name="message"
-                    className={s.field}
+                    className={s.fieldMessage}
                     placeholder="Enter your message"
                   />
-                  <div className={s.lineMessage}></div>
+                  <div className={s.lineWrap}>
+                    <div className={s.lineMessage}></div>
+                    <ErrorMessage
+                      name="message"
+                      component="div"
+                      className={s.errorMessage}
+                    />
+                  </div>
                 </div>
-                <ErrorMessage name="message" component="div" />
               </label>
             </div>
           </div>
