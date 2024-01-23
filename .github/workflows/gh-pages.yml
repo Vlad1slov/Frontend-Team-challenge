@@ -26,8 +26,8 @@ jobs:
 
             - name: Deploy to GitHub Pages
               run: |
-                  git config --global user.email vladmorilov24@gmail.com
-                  git config --global user.name  Vlad Chelombitko
+                  git config --global user.email "vladmorilov24@gmail.com"
+                  git config --global user.name  "Vlad Chelombitko"
                   git checkout gh-pages
                   git rm -rf .
                   cp -r build/* .
