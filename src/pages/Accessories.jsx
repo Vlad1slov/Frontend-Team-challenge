@@ -1,5 +1,5 @@
 const Accessories = () => {
-    return <div>Accessories</div>;
+    return <div>Accessories Auto build check </div>;
 };
 
 export default Accessories;
