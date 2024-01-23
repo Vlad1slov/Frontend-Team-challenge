@@ -46,8 +46,6 @@
 
 .imgWrap {
   flex-shrink: 0;
-  width: 959px;
-  height: 520px;
   position: relative;
 }
 
@@ -62,6 +60,18 @@
   font-size: 500px;
   line-height: 520px;
   font-weight: 700;
+  @media screen and (max-width: 1279px) {
+    font-size: 375px;
+    line-height: 390px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 225px;
+    line-height: 234px;
+  }
+  @media screen and (max-width: 424px) {
+    font-size: 157.5px;
+    line-height: 163.8px;
+  }
 }
 
 .bottomWrap {
