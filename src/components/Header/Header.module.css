@@ -145,7 +145,7 @@
     line-height: 18px;
     position: relative;
     height: 56px;
-    width: 126px;
+    width: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,6 +160,9 @@
 .label:hover {
     background-color: rgb(218, 234, 227);
     border-radius: 10px;
+    @media screen and (max-width: 1279px) {
+        display: none;
+    }
 }
 
 .cart {
@@ -182,22 +185,17 @@
         position: relative;
     }
 }
-
-.iconsMob,
-.mobileInput {
-    margin: 0;
+.iconsMob {
     @media screen and (min-width: 1280px) {
         display: none;
     }
 }
-.icons2 {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-    position: relative;
-    overflow: visible;
-    margin-right: 11px;
+.mobileInput {
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
 }
+
 .cart2 {
     color: var(--Text-River-Styx, #0c1012);
     font-family: HvDTrial Brandon Text;
