@@ -135,9 +135,6 @@
     position: relative;
     overflow: visible;
     margin-right: 11px;
-    @media screen and (max-width: 1279px) {
-        margin: 0;
-    }
 }
 .account2 {
     color: var(--Text-River-Styx, #0c1012);
@@ -185,6 +182,11 @@
         position: relative;
     }
 }
+
+.iconsMob {
+    margin: 0;
+}
+
 @media screen and (min-width: 1280px) {
     .iconsMob,
     .mobileInput {
