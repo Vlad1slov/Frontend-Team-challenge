@@ -134,7 +134,6 @@
     height: 24px;
     position: relative;
     overflow: visible;
-    margin-right: 11px;
 }
 .account2 {
     color: var(--Text-River-Styx, #0c1012);
@@ -183,13 +182,10 @@
     }
 }
 
-.iconsMob {
+.iconsMob,
+.mobileInput {
     margin: 0;
-}
-
-@media screen and (min-width: 1280px) {
-    .iconsMob,
-    .mobileInput {
+    @media screen and (min-width: 1280px) {
         display: none;
     }
 }
