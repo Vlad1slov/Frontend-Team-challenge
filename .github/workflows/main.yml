@@ -1,0 +1,32 @@
+name: Build and Deploy
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+              with:
+                  submodules: true
+
+            - name: Setup Ruby
+              uses: ruby/setup-ruby@v1
+              with:
+                  ruby-version: 2.7
+
+            - name: Build and Deploy
+              run: |
+                  bundle install
+                  bundle exec jekyll build
+                  git config --global user.email "action@github.com"
+                  git config --global user.name "GitHub Action"
+                  cd _site
+                  git init
+                  git add .
+                  git commit -m "Build and deploy to gh-pages"
+                  git push origin gh-pages
