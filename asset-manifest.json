@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Frontend-Team-challenge/static/css/main.c5a96e94.css",
+    "main.css": "/Frontend-Team-challenge/static/css/main.65670d0f.css",
     "main.js": "/Frontend-Team-challenge/static/js/main.c272b92e.js",
     "static/media/Adelle_Semibold.otf": "/Frontend-Team-challenge/static/media/Adelle_Semibold.0feea4a2c6b7a9f8dac0.otf",
     "static/media/rectangle-322.jpg": "/Frontend-Team-challenge/static/media/rectangle-322.9405de096324392218a3.jpg",
@@ -8,11 +8,11 @@
     "static/media/HvDTrial_Brandon_Text_Bold-BF6514e9eb720dc.otf": "/Frontend-Team-challenge/static/media/HvDTrial_Brandon_Text_Bold-BF6514e9eb720dc.5e90a496befa9791c217.otf",
     "static/media/HvDTrial_Brandon_Text_Medium-BF6514e9eb272a3.otf": "/Frontend-Team-challenge/static/media/HvDTrial_Brandon_Text_Medium-BF6514e9eb272a3.e5fa2f5dc253fae8afc2.otf",
     "index.html": "/Frontend-Team-challenge/index.html",
-    "main.c5a96e94.css.map": "/Frontend-Team-challenge/static/css/main.c5a96e94.css.map",
+    "main.65670d0f.css.map": "/Frontend-Team-challenge/static/css/main.65670d0f.css.map",
     "main.c272b92e.js.map": "/Frontend-Team-challenge/static/js/main.c272b92e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5a96e94.css",
+    "static/css/main.65670d0f.css",
     "static/js/main.c272b92e.js"
   ]
 }
