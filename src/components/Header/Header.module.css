@@ -43,15 +43,14 @@
         border-style: solid;
         border-color: var(--primary-pasteltahoesnow, #d8e2e6);
         border-width: 0px 0px 1px 0px;
-        display: flex;
+        display: inline-flex;
         padding: 0;
-        flex-direction: row;
+        flex-direction: initial;
         align-items: flex-start;
         justify-content: space-between;
-        align-self: stretch;
         flex-shrink: 0;
         position: relative;
-        width: 372px;
+        width: 100%;
     }
 }
 .logo-header-desktop {
