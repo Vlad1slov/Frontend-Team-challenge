@@ -1,8 +1,5 @@
 import s from "./ProductCard.module.css";
 import tinsetImg from "images/tinset.jpg";
-import { IconContext } from "react-icons";
-import { FaRegHeart } from "react-icons/fa";
-// import iconHeart from "images/Vector.svg";
 
 export const ProductCard = () => {
   return (
