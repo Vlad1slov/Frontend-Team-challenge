@@ -81,13 +81,10 @@
     flex-shrink: 0;
     position: relative;
     @media screen and (max-width: 1279px) {
-        display: flex;
-        flex-direction: initial;
+        flex-direction: row;
         align-items: center;
         gap: 16px;
-        justify-content: right;
-        flex-shrink: 0;
-        position: relative;
+        justify-content: flex-end;
     }
 }
 
