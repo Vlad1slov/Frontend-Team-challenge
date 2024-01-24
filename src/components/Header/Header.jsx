@@ -66,7 +66,7 @@ const Header = () => {
                     <div className={styles["cart"]}>
                         <div className={styles.iconsMob}>
                             <svg
-                                className={styles["icons2"]}
+                                className={styles["icons"]}
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
@@ -82,7 +82,7 @@ const Header = () => {
 
                         <div className={styles["cart2"]}>
                             <svg
-                                className={styles["icons2"]}
+                                className={styles["icons"]}
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
@@ -94,7 +94,7 @@ const Header = () => {
                                     fill="#3B525B"
                                 />
                             </svg>
-                            Cart
+                            Cart{" "}
                         </div>
                     </div>
                     <div className={styles["button"]}>
