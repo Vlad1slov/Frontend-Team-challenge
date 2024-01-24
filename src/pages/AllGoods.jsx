@@ -1,5 +1,12 @@
+import { ProductCard } from "components/ProductCard/ProductCard";
+
 const AllGoods = () => {
-    return <div>All Goods 1</div>;
+    return (
+        <div>
+            AllGoods
+            <ProductCard />
+        </div>
+    );
 };
 
 export default AllGoods;
